@@ -102,9 +102,8 @@ function PublicProfile() {
   const photoUrl = profile.profilePhoto?.url
   const location = formatLocation(profile.address)
   const isOwner = profileUser.isOwner
-  const visiblePosts =
-    isOwner || showAllActivity ? posts : posts.slice(0, 1)
-  const hasHiddenPosts = !isOwner && posts.length > 1 && !showAllActivity
+  const visiblePosts = showAllActivity ? posts : posts.slice(0, 1)
+  const hasHiddenPosts = posts.length > 1 && !showAllActivity
 
   return (
     <div className="container webapp-page-content public-profile-page">
@@ -333,7 +332,7 @@ function PublicProfile() {
               </button>
             )}
 
-            {!isOwner && showAllActivity && posts.length > 1 && (
+            {showAllActivity && posts.length > 1 && (
               <button
                 type="button"
                 className="public-profile-activity-show-all"
