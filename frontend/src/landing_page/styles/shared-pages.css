@@ -1,0 +1,154 @@
+.landing-page .page-main {
+  flex: 1;
+}
+
+.page-hero {
+  padding: 4rem 0 3rem;
+  background: linear-gradient(
+    160deg,
+    var(--ascendra-bg) 0%,
+    var(--ascendra-primary-light) 50%,
+    var(--ascendra-accent-light) 100%
+  );
+  text-align: center;
+}
+
+.page-hero .section-label {
+  color: var(--ascendra-accent);
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.75rem;
+}
+
+.page-hero h1 {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 700;
+  color: var(--ascendra-text);
+  margin-bottom: 1rem;
+}
+
+.page-hero .page-lead {
+  color: var(--ascendra-text-muted);
+  font-size: 1.1rem;
+  max-width: 640px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.page-content {
+  padding: 3.5rem 0 4rem;
+}
+
+.page-card {
+  background: var(--ascendra-surface);
+  border: 1px solid var(--ascendra-border);
+  border-radius: 16px;
+  padding: 2rem;
+  height: 100%;
+}
+
+.page-card h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: var(--ascendra-text);
+}
+
+.page-card p {
+  color: var(--ascendra-text-muted);
+  margin: 0;
+  line-height: 1.65;
+  font-size: 0.95rem;
+}
+
+.page-card .card-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.page-card .card-icon.indigo {
+  background: var(--ascendra-primary-light);
+  color: var(--ascendra-primary);
+}
+
+.page-card .card-icon.teal {
+  background: var(--ascendra-accent-light);
+  color: var(--ascendra-accent);
+}
+
+.page-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+.page-stat .stat-value {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--ascendra-primary);
+}
+
+.page-stat .stat-label {
+  font-size: 0.85rem;
+  color: var(--ascendra-text-muted);
+}
+
+.faq-item {
+  background: var(--ascendra-surface);
+  border: 1px solid var(--ascendra-border);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.faq-item h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--ascendra-text);
+  margin-bottom: 0.5rem;
+}
+
+.faq-item p {
+  color: var(--ascendra-text-muted);
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.contact-box {
+  background: linear-gradient(135deg, var(--ascendra-primary), #6366f1);
+  color: #fff;
+  border-radius: 20px;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.contact-box h3 {
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.contact-box p {
+  opacity: 0.9;
+  margin-bottom: 1.5rem;
+}
+
+.contact-box a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-box a:hover {
+  text-decoration: underline;
+}

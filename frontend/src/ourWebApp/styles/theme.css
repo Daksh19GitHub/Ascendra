@@ -1,0 +1,389 @@
+/* Ascendra app theme — aligned with landing page polish */
+
+:root {
+  --ascendra-accent-hover: #0d9488;
+  --ascendra-surface: #ffffff;
+  --ascendra-accent-light: rgba(20, 184, 166, 0.1);
+  --ascendra-shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.04);
+  --ascendra-shadow-md: 0 10px 30px rgba(15, 23, 42, 0.06);
+  --ascendra-shadow-lg: 0 18px 40px rgba(15, 23, 42, 0.08);
+  --ascendra-radius-lg: 18px;
+  --ascendra-radius-md: 12px;
+  --ascendra-gradient-brand: linear-gradient(
+    135deg,
+    var(--ascendra-primary),
+    var(--ascendra-accent)
+  );
+  --ascendra-gradient-page: linear-gradient(
+    160deg,
+    var(--ascendra-bg) 0%,
+    rgba(79, 70, 229, 0.06) 45%,
+    rgba(20, 184, 166, 0.05) 100%
+  );
+}
+
+/* ── Page shell ── */
+
+.webapp-page {
+  background: var(--ascendra-gradient-page);
+  background-attachment: fixed;
+}
+
+.webapp-loading {
+  background: var(--ascendra-gradient-page);
+}
+
+.webapp-main {
+  position: relative;
+}
+
+.webapp-route-transition {
+  width: 100%;
+}
+
+/* ── Navbar ── */
+
+.webapp-navbar {
+  background: rgba(255, 255, 255, 0.88) !important;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(226, 232, 240, 0.85);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset,
+    0 4px 24px rgba(79, 70, 229, 0.05);
+  padding: 0.75rem 0;
+}
+
+.webapp-brand-icon-link .brand-icon,
+.webapp-brand .brand-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 14px rgba(79, 70, 229, 0.22);
+}
+
+.webapp-nav-link {
+  border-radius: 10px;
+}
+
+.webapp-profile-link {
+  box-shadow: 0 0 0 1px rgba(226, 232, 240, 0.9);
+  transition: box-shadow 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.webapp-profile-link:hover,
+.webapp-profile-link.active {
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
+}
+
+.profile-search-input {
+  background: var(--ascendra-surface);
+  box-shadow: var(--ascendra-shadow-sm);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.profile-search-input:focus {
+  background: var(--ascendra-surface);
+  box-shadow: 0 0 0 0.2rem rgba(79, 70, 229, 0.12), var(--ascendra-shadow-sm);
+}
+
+/* ── Shared cards & panels ── */
+
+.feed-post-card,
+.compose-post-card,
+.webapp-panel,
+.webapp-hero-card,
+.analytics-stat-card,
+.analytics-chart-card,
+.friend-card,
+.profile-completion-card,
+.profile-form-panel,
+.profile-repeat-card,
+.public-profile-section,
+.chat-sidebar,
+.chat-panel,
+.notification-panel {
+  background: var(--ascendra-surface);
+  border-radius: var(--ascendra-radius-lg);
+  box-shadow: var(--ascendra-shadow-md);
+  border: 1px solid rgba(226, 232, 240, 0.92);
+  transition: box-shadow 0.22s ease, transform 0.22s ease, border-color 0.22s ease;
+}
+
+.feed-post-card:hover,
+.friend-card:hover,
+.analytics-stat-card:hover,
+.analytics-chart-card:hover {
+  box-shadow: var(--ascendra-shadow-lg);
+  transform: translateY(-1px);
+}
+
+.compose-post-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.compose-post-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--ascendra-gradient-brand);
+  opacity: 0.85;
+}
+
+.job-recommendation-card {
+  border-left: 3px solid var(--ascendra-accent);
+  box-shadow: var(--ascendra-shadow-md);
+}
+
+.job-recommendation-card:hover {
+  box-shadow: var(--ascendra-shadow-lg);
+  transform: translateY(-1px);
+}
+
+/* ── Page headers ── */
+
+.feed-page-header,
+.analytics-page-header,
+.friends-page-header {
+  padding: 0.15rem 0 0.25rem;
+}
+
+.feed-page-header .webapp-muted,
+.jobs-page .webapp-muted,
+.analytics-page-header .webapp-muted,
+.friends-page .webapp-muted {
+  font-size: 1.02rem;
+  line-height: 1.55;
+  max-width: 36rem;
+}
+
+.feed-page-header .btn-profile-add {
+  background: var(--ascendra-surface);
+  color: var(--ascendra-primary);
+  border: 1px solid rgba(79, 70, 229, 0.18);
+  box-shadow: var(--ascendra-shadow-sm);
+  border-radius: 999px;
+  padding: 0.4rem 0.95rem;
+  white-space: nowrap;
+}
+
+.feed-page-header .btn-profile-add:hover:not(:disabled) {
+  background: var(--ascendra-primary-light);
+  color: var(--ascendra-primary-hover);
+  border-color: rgba(79, 70, 229, 0.3);
+  transform: translateY(-1px);
+}
+
+/* ── Buttons ── */
+
+.btn-profile-add {
+  border-radius: 10px;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.btn-profile-save {
+  box-shadow: 0 4px 14px rgba(79, 70, 229, 0.28);
+  transition: opacity 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-profile-save:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(79, 70, 229, 0.32);
+}
+
+.btn-ascendra-primary {
+  background: var(--ascendra-gradient-brand);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.55rem 1.25rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(79, 70, 229, 0.25);
+  transition: opacity 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-ascendra-primary:hover {
+  opacity: 0.94;
+  color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(79, 70, 229, 0.3);
+}
+
+.btn-ascendra-outline {
+  border: 1px solid var(--ascendra-border);
+  color: var(--ascendra-text);
+  font-weight: 600;
+  padding: 0.55rem 1.25rem;
+  border-radius: 10px;
+  background: var(--ascendra-surface);
+  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+
+.btn-ascendra-outline:hover {
+  border-color: var(--ascendra-primary);
+  color: var(--ascendra-primary);
+  background: var(--ascendra-surface);
+}
+
+/* ── Empty states ── */
+
+.webapp-empty-state {
+  background: var(--ascendra-surface);
+  border: 1px solid var(--ascendra-border);
+  border-radius: var(--ascendra-radius-lg);
+  box-shadow: var(--ascendra-shadow-sm);
+  padding: 3rem 1.5rem;
+}
+
+.webapp-empty-state i {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1rem;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: linear-gradient(
+    135deg,
+    var(--ascendra-primary-light),
+    var(--ascendra-accent-light)
+  );
+  opacity: 1;
+  font-size: 1.75rem;
+}
+
+.analytics-empty-chart {
+  border-radius: var(--ascendra-radius-md);
+  background: linear-gradient(
+    160deg,
+    rgba(79, 70, 229, 0.04),
+    rgba(20, 184, 166, 0.04)
+  );
+}
+
+/* ── Feed & post actions ── */
+
+.compose-post-type-btn {
+  border-radius: 999px;
+}
+
+.compose-post-type-btn.active {
+  background: var(--ascendra-gradient-brand);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.2);
+}
+
+/* Post action buttons — base styles in shared.css */
+
+.feed-post-avatar,
+.friend-card-avatar {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.9),
+    0 2px 8px rgba(79, 70, 229, 0.12);
+}
+
+/* ── Friends tabs ── */
+
+.friends-tab {
+  border-radius: 999px;
+  box-shadow: var(--ascendra-shadow-sm);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.friends-tab.active {
+  background: var(--ascendra-gradient-brand);
+  color: #fff;
+  border: none;
+  padding: calc(0.45rem + 1px) calc(0.9rem + 1px);
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.22);
+}
+
+.friends-tab.active:hover {
+  color: #fff;
+}
+
+/* ── Profile ── */
+
+.public-profile-hero {
+  border-radius: 24px;
+  box-shadow: var(--ascendra-shadow-md);
+  border: 1px solid rgba(79, 70, 229, 0.1);
+}
+
+.webapp-panel-icon,
+.analytics-stat-icon {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.profile-form .form-control:focus,
+.compose-post-input:focus {
+  border-color: var(--ascendra-primary);
+  box-shadow: 0 0 0 0.2rem rgba(79, 70, 229, 0.12);
+}
+
+/* ── Chat ── */
+
+.chat-sidebar,
+.chat-panel {
+  box-shadow: var(--ascendra-shadow-md);
+}
+
+.chat-friend-item.active {
+  background: linear-gradient(
+    90deg,
+    rgba(79, 70, 229, 0.08),
+    rgba(20, 184, 166, 0.06)
+  );
+}
+
+/* ── Notifications ── */
+
+.notification-panel {
+  box-shadow: var(--ascendra-shadow-lg);
+  border-radius: var(--ascendra-radius-lg);
+}
+
+.notification-item.unread {
+  background: linear-gradient(
+    90deg,
+    rgba(79, 70, 229, 0.06),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+/* ── Analytics ── */
+
+/* Analytics stat values use accent colors from shared.css */
+
+.analytics-top-post-rank {
+  background: var(--ascendra-gradient-brand);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(79, 70, 229, 0.25);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .feed-post-card,
+  .friend-card,
+  .analytics-stat-card,
+  .analytics-chart-card,
+  .job-recommendation-card,
+  .btn-profile-save,
+  .btn-ascendra-primary,
+  .feed-page-header .btn-profile-add {
+    transition: none;
+  }
+
+  .feed-post-card:hover,
+  .friend-card:hover,
+  .analytics-stat-card:hover,
+  .analytics-chart-card:hover,
+  .job-recommendation-card:hover {
+    transform: none;
+  }
+}

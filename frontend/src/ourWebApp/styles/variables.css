@@ -1,0 +1,15 @@
+:root {
+  --ascendra-primary: #4f46e5;
+  --ascendra-primary-hover: #4338ca;
+  --ascendra-accent: #14b8a6;
+  --ascendra-accent-hover: #0d9488;
+  --ascendra-bg: #f8fafc;
+  --ascendra-surface: #ffffff;
+  --ascendra-text: #0f172a;
+  --ascendra-text-muted: #64748b;
+  --ascendra-border: #e2e8f0;
+  --ascendra-primary-light: rgba(79, 70, 229, 0.08);
+  --ascendra-accent-light: rgba(20, 184, 166, 0.1);
+  --webapp-navbar-height: 68px;
+  --webapp-content-gap: 1.5rem;
+}

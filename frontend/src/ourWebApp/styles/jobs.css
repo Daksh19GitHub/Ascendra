@@ -1,0 +1,140 @@
+.feed-job-listing-status {
+  margin-bottom: 0.75rem;
+}
+
+.jobs-page .jobs-loading-note {
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.92rem;
+}
+
+.job-recommendation-card {
+  border-color: rgba(20, 184, 166, 0.25);
+}
+
+.job-match-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem 1rem;
+  margin-bottom: 0.85rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px dashed var(--ascendra-border, #e2e8f0);
+}
+
+.job-match-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
+
+.job-match-badge-high {
+  background: rgba(20, 184, 166, 0.15);
+  color: #0f766e;
+}
+
+.job-match-badge-medium {
+  background: rgba(79, 70, 229, 0.12);
+  color: var(--ascendra-primary, #4f46e5);
+}
+
+.job-match-badge-low {
+  background: rgba(100, 116, 139, 0.12);
+  color: var(--ascendra-text-muted, #64748b);
+}
+
+.job-match-reason {
+  font-size: 0.9rem;
+  color: var(--ascendra-text-muted, #64748b);
+}
+
+.job-listing-status-badge {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 0.85rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.job-listing-status-open {
+  background: rgba(20, 184, 166, 0.12);
+  color: #0f766e;
+}
+
+.job-listing-status-scheduled {
+  background: rgba(79, 70, 229, 0.12);
+  color: var(--ascendra-primary, #4f46e5);
+}
+
+.job-listing-status-closed {
+  background: rgba(100, 116, 139, 0.12);
+  color: var(--ascendra-text-muted, #64748b);
+}
+
+.job-listing-status-expired {
+  background: rgba(220, 38, 38, 0.1);
+  color: #b91c1c;
+}
+
+.my-post-job-status {
+  margin: 0 0 0.75rem 0.35rem;
+}
+
+.job-listing-date-fields {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.85rem;
+  margin-bottom: 0.85rem;
+}
+
+.job-listing-date-label {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--ascendra-text, #0f172a);
+  margin-bottom: 0.35rem;
+}
+
+.job-listing-date-input {
+  border-radius: 12px;
+  border-color: var(--ascendra-border, #e2e8f0);
+  min-height: 44px;
+  padding: 0.55rem 0.75rem;
+  color-scheme: light;
+}
+
+.job-listing-date-input:focus {
+  border-color: var(--ascendra-primary, #4f46e5);
+  box-shadow: 0 0 0 3px var(--ascendra-primary-light, rgba(79, 70, 229, 0.08));
+}
+
+.job-post-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+}
+
+.job-post-read-more,
+.feed-post-read-more {
+  border: none;
+  background: none;
+  padding: 0;
+  margin-top: 0.35rem;
+  color: var(--ascendra-primary, #4f46e5);
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.job-post-read-more:hover,
+.feed-post-read-more:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,73 @@
+.compose-post-card {
+  background: #fff;
+  border: 1px solid var(--ascendra-border, #e2e8f0);
+  border-radius: 16px;
+  padding: 1.25rem 1.35rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
+}
+
+.compose-post-card h2,
+.my-posts-list-section h2 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.85rem;
+}
+
+.compose-post-type-toggle {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.85rem;
+}
+
+.compose-post-type-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid var(--ascendra-border, #e2e8f0);
+  background: #fff;
+  color: var(--ascendra-text-muted, #64748b);
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.compose-post-type-btn:hover:not(:disabled) {
+  color: var(--ascendra-primary, #4f46e5);
+  border-color: rgba(79, 70, 229, 0.25);
+}
+
+.compose-post-type-btn.active {
+  background: var(--ascendra-primary-light, rgba(79, 70, 229, 0.08));
+  color: var(--ascendra-primary, #4f46e5);
+  border-color: rgba(79, 70, 229, 0.2);
+}
+
+.compose-post-type-btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.compose-post-input {
+  border-radius: 12px;
+  border-color: var(--ascendra-border, #e2e8f0);
+  resize: vertical;
+  min-height: 120px;
+  padding: 0.85rem 1rem;
+}
+
+.compose-post-input:focus {
+  border-color: var(--ascendra-primary, #4f46e5);
+  box-shadow: 0 0 0 3px var(--ascendra-primary-light, rgba(79, 70, 229, 0.08));
+}
+
+.compose-post-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.75rem;
+}

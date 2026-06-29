@@ -1,0 +1,3 @@
+const JOB_LISTING_OPEN_DAYS = 90
+
+export { JOB_LISTING_OPEN_DAYS }

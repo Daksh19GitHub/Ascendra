@@ -1,0 +1,210 @@
+.webapp-nav-search-item .profile-search {
+  width: min(280px, 38vw);
+  min-width: 200px;
+}
+
+.webapp-nav-search-item .profile-search-input {
+  font-size: 0.85rem;
+}
+
+.profile-search {
+  position: relative;
+  width: 100%;
+}
+
+.profile-search-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.profile-search-icon {
+  position: absolute;
+  left: 0.75rem;
+  color: var(--ascendra-text-muted, #64748b);
+  font-size: 0.9rem;
+  pointer-events: none;
+}
+
+.profile-search-input {
+  padding-left: 2.2rem;
+  padding-right: 2rem;
+  height: 38px;
+  border-radius: 999px;
+  border: 1px solid var(--ascendra-border, #e2e8f0);
+  font-size: 0.88rem;
+  background: var(--ascendra-bg, #f8fafc);
+}
+
+.profile-search-input:focus {
+  border-color: var(--ascendra-primary, #4f46e5);
+  box-shadow: 0 0 0 0.2rem rgba(79, 70, 229, 0.12);
+  background: #fff;
+}
+
+.profile-search-clear {
+  position: absolute;
+  right: 0.35rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--ascendra-text-muted, #64748b);
+  cursor: pointer;
+}
+
+.profile-search-clear:hover {
+  background: rgba(15, 23, 42, 0.06);
+  color: var(--ascendra-text, #0f172a);
+}
+
+.profile-search-dropdown {
+  position: absolute;
+  top: calc(100% + 0.45rem);
+  left: 0;
+  right: 0;
+  z-index: 1050;
+  background: #fff;
+  border: 1px solid var(--ascendra-border, #e2e8f0);
+  border-radius: 0.85rem;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.profile-search-status {
+  padding: 0.85rem 1rem;
+  font-size: 0.88rem;
+  color: var(--ascendra-text-muted, #64748b);
+}
+
+.profile-search-history-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.65rem 0.9rem 0.45rem;
+  border-bottom: 1px solid var(--ascendra-border, #e2e8f0);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ascendra-text-muted, #64748b);
+}
+
+.profile-search-clear-all {
+  border: none;
+  background: transparent;
+  padding: 0;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: normal;
+  color: var(--ascendra-primary, #4f46e5);
+  cursor: pointer;
+}
+
+.profile-search-clear-all:hover {
+  color: var(--ascendra-primary-hover, #4338ca);
+  text-decoration: underline;
+}
+
+.profile-search-result-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+}
+
+.profile-search-result-wrap.active,
+.profile-search-result-wrap:hover {
+  background: var(--ascendra-primary-light, rgba(79, 70, 229, 0.08));
+}
+
+.profile-search-result-wrap .profile-search-result {
+  flex: 1;
+  min-width: 0;
+}
+
+.profile-search-result-wrap .profile-search-result:hover,
+.profile-search-result-wrap .profile-search-result.active {
+  background: transparent;
+}
+
+.profile-search-remove {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  margin-right: 0.45rem;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--ascendra-text-muted, #64748b);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.profile-search-remove:hover {
+  background: rgba(15, 23, 42, 0.08);
+  color: var(--ascendra-text, #0f172a);
+}
+
+.profile-search-result {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border: none;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+}
+
+.profile-search-result.active,
+.profile-search-result:hover {
+  background: var(--ascendra-primary-light, rgba(79, 70, 229, 0.08));
+}
+
+.profile-search-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--ascendra-primary-light, rgba(79, 70, 229, 0.08));
+  color: var(--ascendra-primary, #4f46e5);
+  flex-shrink: 0;
+}
+
+.profile-search-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-search-meta {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.profile-search-meta strong {
+  font-size: 0.9rem;
+  color: var(--ascendra-text, #0f172a);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.profile-search-meta span {
+  font-size: 0.82rem;
+  color: var(--ascendra-text-muted, #64748b);
+}
